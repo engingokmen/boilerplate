@@ -18,7 +18,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Output Management',
+            template: './src/html/index.html',
         }),
     ],
     output: {
@@ -26,4 +26,5 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
+    devtool: 'inline-source-map',
 }
